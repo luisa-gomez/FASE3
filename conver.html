@@ -1,0 +1,62 @@
+
+
+<div class="container">
+
+  <h1>Conversor de unidades</h1>
+
+
+  <script>
+    function calcular(){
+        
+        var a = document.f1.a.value;
+        var b = document.f1.b1.value;
+        var x = document.f1.b2.value;
+        var r = document.f1.c.value;
+        r=(parseFloat(a)*parseFloat(x))/parseFloat(b);
+       document.f1.c.value=r;
+        
+    }
+    
+    </script> 
+
+
+
+<form name="f1" action="conver.html" method="POST">
+
+  
+  <input type="text" class="form-control" id="a" name="a" placeholder="Digite aquí el valor a convertir" style="width: 300px">
+  
+  
+<select name="b1" class="form-control"style="width: 300px">
+  <option value="1000000000000"  >bytes</option>
+  <option value="1000000000"  >kilobytes</option>
+  <option value="1000000" >megabytes</option>
+  <option value="1000" >gigabytes</option>
+  <option value="0.001">terabytes</option>
+</select>
+
+  <input type="Button" name="" value="convertir" onclick="calcular()" class="btn btn-primary" style="background-color: #1D5CA7">
+
+  <select name="b2" class="form-control"style="width: 300px">
+    <option value="1000000000000"  >bytes</option>
+    <option value="1000000000"  >kilobytes</option>
+    <option value="1000000" >megabytes</option>
+    <option value="1000" >gigabytes</option>
+    <option value="0.001">terabytes</option>
+  </select>
+
+<fieldset disabled>
+  <input type="text" class="form-control" id="c" name="c" placeholder="Resultado"style="width: 300px">
+
+	</div>
+
+  	</form>
+
+
+
+
+      
+</div>
+
+</body>
+</html>
